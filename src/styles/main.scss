@@ -3,5 +3,24 @@
 @import 'typography';
 
 body {
-  background: $c-gray;
+  background-color: #1D1D1D;
+  color: #FFF;
 }
+
+.menu {
+  color: #1D1D1D;
+  background-color: #C2C2C2;
+}
+
+.button {
+  color: #1D1D1D;
+  background-color: #FFF;
+  width: 278;
+  height: 56;
+  border-radius: 40px;
+  opacity: 1;
+  left: 22px;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
