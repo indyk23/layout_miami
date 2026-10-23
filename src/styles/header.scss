@@ -1,0 +1,21 @@
+.rower {
+  background-image: url("../images/photos/big-rower.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 480px;
+}
+
+@media (min-width: 744px) {
+  .rower {
+    background-image: url("../images/photos/big-rower.jpg");
+    height: 628;
+  }
+}
+
+@media (min-width: 1260px) {
+  .rower {
+    background-image: url("../images/photos/big-rower.jpg");
+    height: 711px;
+  }
+}

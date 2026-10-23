@@ -9,7 +9,7 @@
     <title>Miami</title>
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="src/styles/style.scss"
     />
     <script
       src="src/scripts/main.js"
@@ -18,28 +18,39 @@
   </head>
   <body>
     <header class="rower">
-      <h1>MyBiKE ale tutaj ma być logo nie napisz</h1>
+      <img src="src/images/MyBiKE.svg" alt="logo">
       <img src="src/images/phone.svg" alt="phone" >
       <img src="src/images/menu.svg" alt="menu" >
       <h1>Take the Streets</h1>
-      <section class="menu">
-        <div class="menu">
-          <p>MyBike tutaj obrazek</p>
-          <img src="src/images/crossblack.svg" alt="cross">
-        </div>
-        <div>
-          <div>HOME</div>
-          <div>About Us</div>
-          <div>Compare Bikes</div>
-          <div>Details</div>
-          <div>Contacts</div>
-        </div>
-        <div>
-          <div>+1 234 5555-55-55</div>
-          <div>Book a test ride</div>
-        </div>
-      </section>
     </header>
+    <menu class="menu">
+      <div class="menu__top">
+        <img src="src/images/MyBiKEBlack.svg" alt="logo">
+
+        <img
+          src="src/images/crossblack.svg"
+          alt="Close menu"
+        >
+      </div>
+
+      <nav class="menu__nav">
+        <a href="#home">HOME</a>
+        <a href="#about-us">About Us</a>
+        <a href="#compare-bikes">Compare Bikes</a>
+        <a href="#details">Details</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+
+      <div class="menu__contact">
+        <a href="tel:+12345555555">
+          +1 234 5555-55-55
+        </a>
+
+        <a href="#test-ride">
+          Book a test ride
+        </a>
+      </div>
+    </menu>
     <main>
       <section1>
         <h2>Move Free</h2>
@@ -48,19 +59,19 @@
       <section2>
         <h2>Compare bikes</h2>
         <div>
-          <p>tutaj będzie obrazek</p>
+          <img src="src/images/photos/Sporty4.png" alt="Sporty 4" >
           <h3>Sporty 4</h3>
           <p>The iconic frame brought to a new performance height as a sporty, active ride.</p>
           <p>$ 2 590</p>
         </div>
         <div>
-          <p>tutaj będzie obrazek</p>
+          <img src="src/images/photos/RideinTown.png" alt="Ride in town ST">
           <h3>Ride in town ST</h3>
           <p>An open frame for an upright riding position as the most comfortable ride in town.</p>
           <p>$ 2 590</p>
         </div>
         <div>
-          <p>tutaj będzie obrazek</p>
+          <img src="src/images/photos/Agile_ride3.png" alt="Agile ride 3">
           <h3>Agile ride 3</h3>
           <p>The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
           <p>$ 2 090</p>
@@ -69,17 +80,20 @@
       <section3>
         <h2>The details</h2>
         <div>
-          <p>tutaj mają być 2 obrazki</p>
+          <img src="src/images/photos/unlock1.png" alt="unlock1">
+          <img src="src/images/photos/unlock2.png" alt="unlock2">
           <h3>Auto Unlock</h3>
           <p>The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
         </div>
         <div>
-          <p>tutaj mają być 2 obrazki</p>
+          <img src="src/images/photos/range1.png" alt="range1">
+          <img src="src/images/photos/range2.png" alt="range2">
           <h3>Range & Integrated lights</h3>
           <p>The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </div>
         <div>
-          <p>tutaj mają być 2 obrazki</p>
+          <img src="src/images/photos/hydral1.png" alt="hydral1">
+          <img src="src/images/photos/hydral2.png" alt="hydral2">
           <h3>Hydraulic disc brakes & Lightweight</h3>
           <p>Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
         </div>
@@ -114,8 +128,7 @@
         </p>
       </section5>
     </main>
-    <footer>
-      <p>tutaj ma być obrazek</p>
+    <footer class="footer">
     </footer>
   </body>
 </html>
