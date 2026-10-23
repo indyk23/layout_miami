@@ -2,3 +2,186 @@
 .cos  {
   width: auto;
 }
+
+.section2 {
+  &__picture {
+    width: 280px;
+    height: 228px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture {
+      width: 392px;
+      height: 316px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture {
+      width: 324px;
+      height: 256px;
+    }
+  }
+}
+
+.section3 {
+  &__picture1 {
+    width: 130px;
+    height: 130px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture1 {
+      width: 392px;
+      height: 187px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture1 {
+      width: 321px;
+      height: 672px;
+    }
+  }
+
+    &__picture2 {
+    width: 130px;
+    height: 130px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture2 {
+      width: 184px;
+      height: 187px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture2 {
+      width: 324px;
+      height: 320px;
+    }
+  }
+  &__picture3 {
+    width: 130px;
+    height: 130px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture3 {
+      width: 392px;
+      height: 187px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture3 {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  &__picture4 {
+    width: 184px;
+    height: 187px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture4 {
+      width: 324px;
+      height: 320px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture4 {
+      width: 324px;
+      height: 256px;
+    }
+  }
+  &__picture5 {
+    width: 128px;
+    height: 130px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture5 {
+      width: 184px;
+      height: 188px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture5 {
+      width: 324px;
+      height: 320px;
+    }
+  }
+  &__picture6 {
+    width: 130.38px;
+    height: 130px;
+
+      img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: 744px) {
+    &__picture6 {
+      width: 395px;
+      height: 188px;
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__picture6 {
+      width: 672px;
+      height: 320px;
+    }
+  }
+}
+
