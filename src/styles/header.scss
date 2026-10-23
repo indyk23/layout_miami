@@ -17,3 +17,112 @@
   }
 }
 
+.logo {
+  width: 130px;
+  height: 38px;
+
+    img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+  @media (min-width: 744px) {
+  .logo {
+    width: 187px;
+    height: 56px;
+  }
+}
+
+.phone {
+  width: 18px;
+  height: 18px;
+
+    img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+  @media (min-width: 744px) {
+  .phone {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.menusvg {
+  width: 18px;
+  height: 12px;
+
+    img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+  @media (min-width: 744px) {
+  .menusvg {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.blackcross {
+  width: 280px;
+  height: 228px;
+
+    img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+  @media (min-width: 744px) {
+  .blackcross {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+  @media (min-width: 1260px) {
+  .blackcross {
+    width: 21.33px;
+    height: 21.33px;
+  }
+}
+
+// .logo {
+//   width: 280px;
+//   height: 228px;
+
+//     img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: contain;
+//   }
+// }
+
+//   @media (min-width: 744px) {
+//   .logo {
+//     width: 392px;
+//     height: 316px;
+//   }
+// }
+
+//   @media (min-width: 1260px) {
+//   .logo {
+//     width: 324px;
+//     height: 256px;
+//   }
+// }
