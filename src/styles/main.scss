@@ -1,6 +1,55 @@
 
-.cos  {
-  width: auto;
+.section1 {
+    &__font--h2 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+
+
+  }
+
+    @media (min-width: 744px) {
+    &__font--h2 {
+      font-size: 48px;
+    }
+  }
+
+    @media (min-width: 1260px) {
+    &__font--h2 {
+      font-size: 64px;
+    }
+  }
+      &__font--p {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 23px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+}
+
+.sectiontwins {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    text-transform: capitalize;
+
+    @media (min-width: 744px) {
+      font-size: 48px;
+  }
+
+    @media (min-width: 1260px) {
+      font-size: 64px;
+  }
 }
 
 .section2 {
@@ -28,6 +77,32 @@
       width: 324px;
       height: 256px;
     }
+  }
+  &__font--h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+  &__font--p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+  }
+
+  &__font--M {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0;
   }
 }
 
