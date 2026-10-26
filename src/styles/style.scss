@@ -3,6 +3,7 @@
 // @import 'fonts';
 @import 'typography';
 @import 'header';
+@import 'menu';
 @import 'footer';
 @import 'main';
 
@@ -10,11 +11,6 @@ body {
   background-color: #1D1D1D;
   color: #FFF;
   margin: 0;
-}
-
-.menu {
-  color: #1D1D1D;
-  background-color: #C2C2C2;
 }
 
 .button {

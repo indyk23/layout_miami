@@ -1,0 +1,42 @@
+.menu {
+  color: #1D1D1D;
+  background-color: #C2C2C2;
+}
+
+.menu__font {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.menu__font--telefone {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.menu__font--book {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #1D1D1D;
+}
