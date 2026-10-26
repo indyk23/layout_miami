@@ -345,4 +345,23 @@
   }
 }
 
+.section3__gallery:has(> .section3__picture5) {
+  display: grid;
+  grid-template-columns: 128px 130.38px;
+  gap: 20px;
+}
+
+@media (min-width: 744px) {
+  .section3__gallery:has(> .section3__picture5) {
+    grid-template-columns: 184px 395px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .section3__gallery:has(> .section3__picture5) {
+    grid-template-columns: 324px 672px;
+    gap: 24px;
+  }
+}
 
