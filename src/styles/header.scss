@@ -94,35 +94,26 @@
   }
 }
 
-//   @media (min-width: 1260px) {
-//   .blackcross {
-//     width: 21.33px;
-//     height: 21.33px;
-//   }
-// }
+.h1 {
+  font-family: Popppins, Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+  vertical-align: middle;
 
-// .logo {
-//   width: 280px;
-//   height: 228px;
+}
 
-//     img {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: contain;
-//   }
-// }
+  @media (min-width: 744px) {
+  .h1 {
+    font-size: 64px;
+  }
+}
 
-//   @media (min-width: 744px) {
-//   .logo {
-//     width: 392px;
-//     height: 316px;
-//   }
-// }
-
-//   @media (min-width: 1260px) {
-//   .logo {
-//     width: 324px;
-//     height: 256px;
-//   }
-// }
+  @media (min-width: 1260px) {
+  .h1 {
+    font-size: 80px;
+  }
+}
