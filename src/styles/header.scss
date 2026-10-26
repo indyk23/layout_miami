@@ -76,8 +76,8 @@
 }
 
 .blackcross {
-  width: 280px;
-  height: 228px;
+  width: 16px;
+  height: 16px;
 
     img {
     display: block;
@@ -89,17 +89,17 @@
 
   @media (min-width: 744px) {
   .blackcross {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-  @media (min-width: 1260px) {
-  .blackcross {
     width: 21.33px;
     height: 21.33px;
   }
 }
+
+//   @media (min-width: 1260px) {
+//   .blackcross {
+//     width: 21.33px;
+//     height: 21.33px;
+//   }
+// }
 
 // .logo {
 //   width: 280px;

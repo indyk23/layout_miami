@@ -31,157 +31,318 @@
   }
 }
 
-.section3 {
-  &__picture1 {
-    width: 130px;
-    height: 130px;
+// .section3 {
+//   &__picture1 {
+//     width: 130px;
+//     height: 130px;
 
-      img {
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture1 {
+//       width: 392px;
+//       height: 187px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture1 {
+//       width: 672px;
+//       height: 321px;
+//     }
+//   }
+
+//     &__picture2 {
+//     width: 130px;
+//     height: 130px;
+
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture2 {
+//       width: 184px;
+//       height: 187px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture2 {
+//       width: 324px;
+//       height: 320px;
+//     }
+//   }
+//   &__picture3 {
+//     width: 130px;
+//     height: 130px;
+
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture3 {
+//       width: 392px;
+//       height: 187px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture3 {
+//       width: 672px;
+//       height: 320px;
+//     }
+//   }
+//   &__picture4 {
+//     width: 130px;
+//     height: 130px;
+
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture4 {
+//       width: 184px;
+//       height: 187px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture4 {
+//       width: 324px;
+//       height: 320px;
+//     }
+//   }
+//   &__picture5 {
+//     width: 128px;
+//     height: 130px;
+
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       object-position: center;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture5 {
+//       width: 184px;
+//       height: 188px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture5 {
+//       width: 324px;
+//       height: 320px;
+//     }
+//   }
+//   &__picture6 {
+//     width: 130.38px;
+//     height: 130px;
+
+//       img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+
+//   @media (min-width: 744px) {
+//     &__picture6 {
+//       width: 395px;
+//       height: 188px;
+//     }
+//   }
+
+//   @media (min-width: 1260px) {
+//     &__picture6 {
+//       width: 672px;
+//       height: 320px;
+//     }
+//   }
+// }
+
+
+
+.section3 {
+  display: block;
+
+  &__inner {
+    width: 100%;
+    max-width: 280px;
+    margin-inline: auto;
+  }
+
+  &__inner > h2 {
+    text-align: center;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 130px 130px;
+    gap: 20px;
+    align-items: start;
+  }
+
+  // Odwrócona kolejność szerokości kolumn
+  &__gallery--reverse {
+    grid-template-columns: 128px 130.38px;
+  }
+
+  &__picture1,
+  &__picture2,
+  &__picture3,
+  &__picture4,
+  &__picture5,
+  &__picture6 {
+    height: 130px;
+    min-width: 0;
+    overflow: hidden;
+
+    img {
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
+  &__picture1,
+  &__picture2,
+  &__picture3,
+  &__picture4 {
+    width: 130px;
+  }
+
+  &__picture5 {
+    width: 128px;
+
+    img {
+      // Pokazuje całą klamkę hamulca
+      object-position: 70% center;
+    }
+  }
+
+  &__picture6 {
+    width: 130.38px;
+  }
+
+  &__picture4 img {
+    transform: scaleX(-1);
+  }
+
+  &__feature + &__feature {
+    margin-top: 40px;
+  }
+
+  // TABLET - 744px
   @media (min-width: 744px) {
-    &__picture1 {
+    &__inner {
+      max-width: 599px;
+    }
+
+    &__gallery {
+      grid-template-columns: 392px 184px;
+      gap: 20px;
+    }
+
+    &__gallery--reverse {
+      grid-template-columns: 184px 395px;
+    }
+
+    &__picture1,
+    &__picture3 {
       width: 392px;
       height: 187px;
     }
-  }
 
-  @media (min-width: 1260px) {
-    &__picture1 {
-      width: 321px;
-      height: 672px;
-    }
-  }
-
-    &__picture2 {
-    width: 130px;
-    height: 130px;
-
-      img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @media (min-width: 744px) {
-    &__picture2 {
+    &__picture2,
+    &__picture4 {
       width: 184px;
       height: 187px;
     }
-  }
 
-  @media (min-width: 1260px) {
-    &__picture2 {
-      width: 324px;
-      height: 320px;
-    }
-  }
-  &__picture3 {
-    width: 130px;
-    height: 130px;
-
-      img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @media (min-width: 744px) {
-    &__picture3 {
-      width: 392px;
-      height: 187px;
-    }
-  }
-
-  @media (min-width: 1260px) {
-    &__picture3 {
-      width: 130px;
-      height: 130px;
-    }
-  }
-  &__picture4 {
-    width: 184px;
-    height: 187px;
-
-      img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @media (min-width: 744px) {
-    &__picture4 {
-      width: 324px;
-      height: 320px;
-    }
-  }
-
-  @media (min-width: 1260px) {
-    &__picture4 {
-      width: 324px;
-      height: 256px;
-    }
-  }
-  &__picture5 {
-    width: 128px;
-    height: 130px;
-
-      img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @media (min-width: 744px) {
     &__picture5 {
       width: 184px;
       height: 188px;
     }
-  }
 
-  @media (min-width: 1260px) {
-    &__picture5 {
-      width: 324px;
-      height: 320px;
-    }
-  }
-  &__picture6 {
-    width: 130.38px;
-    height: 130px;
-
-      img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @media (min-width: 744px) {
     &__picture6 {
       width: 395px;
       height: 188px;
     }
   }
 
+  // DESKTOP - 1260px
   @media (min-width: 1260px) {
+    &__inner {
+      max-width: 1020px;
+    }
+
+    &__gallery {
+      grid-template-columns: 672px 324px;
+      gap: 24px;
+    }
+
+    &__gallery--reverse {
+      grid-template-columns: 324px 672px;
+    }
+
+    &__picture1 {
+      width: 672px;
+      height: 321px;
+    }
+
+    &__picture2 {
+      width: 324px;
+      height: 320px;
+    }
+
+    &__picture3 {
+      width: 672px;
+      height: 320px;
+    }
+
+    &__picture4 {
+      width: 324px;
+      height: 320px;
+    }
+
+    &__picture5 {
+      width: 324px;
+      height: 320px;
+    }
+
     &__picture6 {
       width: 672px;
       height: 320px;
     }
   }
 }
+
 
