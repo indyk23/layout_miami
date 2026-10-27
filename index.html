@@ -231,18 +231,28 @@
       </section>
 
       <section4>
-        <h2>Contact us</h2>
+        <h2 class="section4__font--h2">Contact us</h2>
         <form action="/wyslij.php" method="POST">
-          <label for="imie">Name</label>
-          <input type="text" id="imie">
+          <label for="imie" ><p class="section4__p">Name</p></label>
+          <input type="text"
+          placeholder="Name"
+          class="section4__label"
+          id="imie"
+          >
 
-          <label for="email">Email</label>
-          <input type="email" id="email">
+          <label for="email"><p class="section4__p">Email</p></label>
+          <input type="email"
+          placeholder="Email"
+          class="section4__label"
+          id="email"
+          >
 
-          <label for="text">Message</label>
-          <textarea></textarea>
+          <label for="text"><p class="section4__p">Message</p></label>
+          <textarea placeholder="Message"
+          class="section4__text"
+          id="test"></textarea>
 
-          <button type="submit">Send</button>
+          <button type="submit" class="section4__button">Send</button>
         </form>
       </section4>
       <section5>
