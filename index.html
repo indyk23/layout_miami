@@ -20,34 +20,30 @@
     ></script>
   </head>
   <body>
-    <header class="rower">
+    <header class="rower" id="menusvg home">
       <div class="logo">
         <img src="src/images/MyBiKE.svg" alt="logo">
       </div>
       <div class="phone">
         <img src="src/images/phone.svg" alt="phone" >
       </div>
-      <div class="menusvg">
-        <img src="src/images/menu.svg" alt="menu" >
+      <div class="menusvg" >
+        <a href="#menu"><img src="src/images/menu.svg" alt="menu" ></a>
       </div>
 
 
 
       <h1 class="h1">Take the Streets</h1>
     </header>
-    <menu class="menu">
+    <menu class="menu" id="menu">
       <div class="menu__top">
         <div class="logo">
           <img src="src/images/MyBiKEBlack.svg" alt="logo">
         </div>
 
         <div class="blackcross">
-          <img
-          src="src/images/crossblack.svg"
-          alt="Close menu"
-          >
+          <a href="#menusvg"><img src="src/images/crossblack.svg" alt="Close menu"></a>
         </div>
-
       </div>
 
       <nav class="menu__nav menu__font">
@@ -69,11 +65,11 @@
       </div>
     </menu>
     <main>
-      <section1 class="section1">
+      <section1 class="section1" id="about-us">
         <h2 class="section1 section1__font--h2">Move Free</h2>
         <p class="section1 section1__font--p">Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.</p>
       </section1>
-      <section2 class="section2">
+      <section2 class="section2" id="compare-bikes">
         <h2 class="sectiontwins">Compare bikes</h2>
         <div class="section2">
           <div class="section2 section2__picture">
@@ -231,7 +227,7 @@
       </section>
 
       <section4>
-        <h2 class="section4__font--h2">Contact us</h2>
+        <h2 class="section4__font--h2" id="contacts">Contact us</h2>
         <form action="/wyslij.php" method="POST">
           <label for="imie" ><p class="section4__p">Name</p></label>
           <input type="text"
