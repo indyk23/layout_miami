@@ -1,32 +1,13 @@
-// .rower {
-//   background-image: url("../images/photos/big-rower.jpg");
-//   background-size: cover;
-//   background-position: right center;
-//   background-repeat: no-repeat;
-//   height: 480px;
-
-//   @media (min-width: 744px) {
-//     height: 628px;
-//     background-position: center;
-//   }
-
-//   @media (min-width: 1260px) {
-//     height: 711px;
-//     background-position: center;
-//   }
-// }
-
 .rower {
   position: relative;
   width: 100%;
+  height: 480px;
   box-sizing: border-box;
 
   background-image: url("../images/photos/big-rower.jpg");
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-
-  height: 480px;
 
   @media (min-width: 744px) {
     height: 628px;
@@ -39,22 +20,25 @@
   }
 }
 
+/* Główny nagłówek */
 .header {
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
   width: 100%;
   box-sizing: border-box;
+  padding: 24px 20px 0;
 }
 
+/* Logo */
 .logo {
   width: 130px;
   height: 38px;
-  margin-left: 20px;
-  margin-top: 24px;
-  flex-shrink: 0;
-    img {
+  flex: 0 0 130px;
+
+  img {
     display: block;
     width: 100%;
     height: 100%;
@@ -62,182 +46,168 @@
   }
 }
 
-  @media (min-width: 744px) {
+@media (min-width: 744px) {
+  .header {
+    padding: 36px 72px 0;
+  }
+
   .logo {
-    margin-left: 72px;
-    margin-top: 36px;
     width: 187px;
     height: 56px;
+    flex-basis: 187px;
   }
 }
 
-  @media (min-width: 1260px) {
-  .logo {
-    margin-left: 120px;
+@media (min-width: 1260px) {
+  .header {
+    padding-right: 124px;
+    padding-left: 120px;
   }
 }
 
+/* Telefon i menu */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+  margin-left: auto;
+  margin-top: 7px;
+}
+
+@media (min-width: 744px) {
+  .header__actions {
+    gap: 32px;
+    margin-top: 12px;
+  }
+}
+
+/* Wspólne style klikalnych elementów */
+.menu__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  cursor: pointer;
+  line-height: 0;
+  text-decoration: none;
+}
+
+/* Ikona telefonu */
 .phone {
   display: block;
   width: 18px;
   height: 18px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  margin-right: 24px;
-  margin-top: 31px;
-
-    img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  margin: 0;
+  flex-shrink: 0;
 }
 
-  @media (min-width: 744px) {
+@media (min-width: 744px) {
   .phone {
-    margin-right: 32px;
-    margin-top: 48px;
     width: 24px;
     height: 24px;
   }
 }
 
-  @media (min-width: 1260px) {
-    .phone {
-      margin-top: 52px;
-      margin-right: 36px;
-    }
-  }
-
+/* Ikona menu */
 .menusvg {
+  display: block;
   width: 18px;
   height: 12px;
-  margin-top: 37px;
-  margin-right: 23px;
-
-    img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+  margin: 0;
+  flex-shrink: 0;
 }
 
-  @media (min-width: 744px) {
+@media (min-width: 744px) {
   .menusvg {
     width: 24px;
     height: 16px;
-    margin-right: 76px;
-    margin-top: 56px;
   }
 }
 
-  @media (min-width: 1260px) {
-  .menusvg {
-    margin-right: 124px;
-    margin-top: 56px;
-  }
-}
-
-.blackcross {
-  width: 16px;
-  height: 16px;
-
-    img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-
-  @media (min-width: 744px) {
-  .blackcross {
-    width: 21.33px;
-    height: 21.33px;
-  }
-}
-
-.phone-toggle {
-  display: none;
-}
-
+/* Kontener telefonu */
 .phone-container {
   position: relative;
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
 }
 
+.phone-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Numer telefonu nie wpływa na układ strony */
 .numer {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: calc(100% + 12px);
   transform: translateY(-50%);
 
   margin: 0;
   padding: 8px;
-  white-space: nowrap;
 
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1px;
+
+  color: #fff;
+
+  white-space: nowrap;
   visibility: hidden;
-  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .phone-toggle:checked ~ .numer {
   visibility: visible;
-  z-index: 999;
+  opacity: 1;
 }
 
-.menu__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-  line-height: 0;
-}
-
-.header__actions {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  flex-shrink: 0;
-}
-
+/* Nagłówek na zdjęciu */
 .h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 88px;
+  transform: translateX(-50%);
+
+  width: max-content;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  margin: 0;
+
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: -1.5px;
   text-align: center;
-  vertical-align: middle;
-  align-self: flex-end;
-  flex-shrink: 0;
-  margin-right: 20px;
-  margin-bottom: 88px;
+
+  color: #fff;
 }
 
-  @media (min-width: 744px) {
+@media (min-width: 744px) {
   .h1 {
+    bottom: 130px;
     font-size: 64px;
-    margin-right: 72px;
-    margin-bottom: 130px;
   }
 }
 
-  @media (min-width: 1260px) {
+@media (min-width: 1260px) {
   .h1 {
+    bottom: 203px;
     font-size: 80px;
-    margin-right: 294px;
-    margin-bottom: 203px;
   }
 }
