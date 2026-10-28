@@ -42,9 +42,12 @@
 }
 
 .phone {
+  display: block;
   width: 18px;
   height: 18px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 
     img {
     display: block;
@@ -124,6 +127,16 @@
 
 .phone-toggle:checked ~ .numer {
   visibility: visible;
+}
+
+.menu__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  line-height: 0;
 }
 
 .h1 {
