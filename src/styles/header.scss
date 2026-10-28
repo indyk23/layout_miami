@@ -28,8 +28,9 @@
 .logo {
   width: 130px;
   height: 38px;
-  flex-shrink: 0
-
+  margin-left: 20px;
+  margin-top: 24px;
+  flex-shrink: 0;
     img {
     display: block;
     width: 100%;
@@ -40,8 +41,16 @@
 
   @media (min-width: 744px) {
   .logo {
+    margin-left: 72px;
+    margin-top: 36px;
     width: 187px;
     height: 56px;
+  }
+}
+
+  @media (min-width: 1260px) {
+  .logo {
+    margin-left: 120px;
   }
 }
 
