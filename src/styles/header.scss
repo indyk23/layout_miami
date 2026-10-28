@@ -20,11 +20,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
   width: 130px;
   height: 38px;
+  flex-shrink: 0
 
     img {
     display: block;
@@ -102,31 +106,38 @@
   }
 }
 
-.phone-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
 .phone-toggle {
   display: none;
 }
 
+.phone-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .numer {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+
+  margin: 0;
+  padding: 8px;
+  white-space: nowrap;
+
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
+  letter-spacing: 1px;
   visibility: hidden;
-  margin: 0;
-  white-space: nowrap;
+  z-index: 9999;
 }
 
 .phone-toggle:checked ~ .numer {
   visibility: visible;
+  z-index: 999;
 }
 
 .menu__link {
@@ -137,6 +148,13 @@
   height: fit-content;
   cursor: pointer;
   line-height: 0;
+}
+
+.header__actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
 }
 
 .h1 {
@@ -150,6 +168,7 @@
   vertical-align: middle;
   align-self: flex-end;
   margin: 0;
+  flex-shrink: 0
 
 }
 
