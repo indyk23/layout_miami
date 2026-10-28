@@ -16,6 +16,12 @@
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .logo {
   width: 130px;
   height: 38px;
@@ -94,7 +100,9 @@
 }
 
 .phone-container {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .phone-toggle {
@@ -110,6 +118,8 @@
   text-transform: uppercase;
 
   visibility: hidden;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .phone-toggle:checked ~ .numer {
@@ -125,6 +135,8 @@
   letter-spacing: -1.5px;
   text-align: center;
   vertical-align: middle;
+  align-self: flex-end;
+  margin: 0;
 
 }
 
