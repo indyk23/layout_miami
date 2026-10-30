@@ -6,12 +6,16 @@
   background-repeat: no-repeat;
 
   height: clamp(200px, calc(66.04vw - 11.32px), 480px);
+
+  margin-top: 120px;
 }
 
 @media (min-width: 744px) {
   .footer {
     height: clamp(480px, calc(14.53vw + 371.86px), 555px);
     background-position: 80% center;
+
+    margin-top: 102px;
   }
 }
 
@@ -19,5 +23,7 @@
   .footer {
     height: 44.05vw;
     background-position: center;
+
+    margin-top: 164px;
   }
 }
