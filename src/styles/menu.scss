@@ -1,6 +1,6 @@
 .menu {
-  color: #1D1D1D;
-  background-color: #C2C2C2;
+  color: $background-color;
+  background-color: $menuColor;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@
 
 a {
   text-decoration: none;
-  color: #1D1D1D;
+  color: $background-color;
 }
 
 .menu__nav a {
@@ -55,7 +55,7 @@ a {
   padding-bottom: 8px;
 
   &:hover {
-    border-bottom-color: #1D1D1D;
+    border-bottom-color: $background-color;
   }
 }
 
@@ -134,9 +134,9 @@ a {
 
   padding-bottom: 8px;
   border-bottom: 1px solid transparent;
-  color: #1D1D1D;
+  color: $background-color;
 
-  border-bottom-color: #1D1D1D;
+  border-bottom-color: $background-color;
 }
 
 @media (min-width: 1260px) {

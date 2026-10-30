@@ -162,7 +162,7 @@
   line-height: 16px;
   letter-spacing: 1px;
 
-  color: #fff;
+  color: $white;
 
   white-space: nowrap;
   visibility: hidden;
@@ -195,7 +195,7 @@
   letter-spacing: -1.5px;
   text-align: center;
 
-  color: #fff;
+  color: $white;
 }
 
 @media (min-width: 744px) {
