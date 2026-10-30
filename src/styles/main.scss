@@ -503,6 +503,7 @@
   }
 }
 
+
 .section4 {
   &__grid {
     display: grid;
@@ -519,7 +520,9 @@
     }
 
     .dane {
-      grid-column: 1 / 2;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
       min-width: 0;
     }
   }
@@ -535,7 +538,9 @@
     grid-column: 1 / -1;
   }
 
+  // Ukryte etykiety formularza
   &__p {
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -592,14 +597,21 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
   }
 
   &__font--p {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
+    margin: 0 0 24px;
   }
 
   // TABLET — 744px
@@ -663,3 +675,4 @@
     }
   }
 }
+
