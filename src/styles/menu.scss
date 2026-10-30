@@ -75,7 +75,8 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 
-  margin-left: 20px;
+  // margin-left: 20px;
+
   margin-bottom: 40px;
 }
 
@@ -151,7 +152,9 @@ a {
   width: 130px;
   height: 38px;
   margin-top: 24px;
-  margin-left: 20px;
+
+  // margin-left: 20px;
+
   margin-bottom: 48px;
 
   img {
@@ -179,9 +182,9 @@ a {
   }
 }
 
-.menu__numer {
-  margin-left: 20px;
-}
+// .menu__numer {
+//   margin-left: 20px;
+// }
 
 @media (min-width: 744px) {
   .menu__numer {
