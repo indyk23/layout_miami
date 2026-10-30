@@ -602,145 +602,402 @@
   }
 }
 
+// .section4 {
+//     &__grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, minmax(0, 1fr));
+//     gap: 20px;
+//     margin-inline: 20px;
+
+//     @media (min-width: 744px) {
+//       grid-template-columns: repeat(6, minmax(0, 1fr));
+//       gap: 24px;
+//       margin-inline: 72px;
+//     }
+
+//     @media (min-width: 1260px) {
+//       grid-template-columns: repeat(12, minmax(0, 1fr));
+//       margin-inline: 120px;
+//     }
+//   }
+
+
+//   &__label,
+//   &__text {
+//     box-sizing: border-box;
+//     padding: 14px 16px;
+//     border: 1px solid #ccc;
+//   }
+
+//   &__font--h2 {
+//   font-family: Poppins, Arial, Helvetica, sans-serif;
+//   font-weight: 500;
+//   font-style: Medium;
+//   font-size: 32px;
+//   line-height: 32px;
+//   letter-spacing: -1.5px;
+//   text-align: center;
+//   margin-bottom: 48px;
+
+//   grid-column: 1/-1;
+// }
+
+//   @media (min-width: 744px) {
+//   &__font--h2 {
+//   font-size: 48px;
+//   }
+// }
+
+//   @media (min-width: 1260px) {
+//   &__font--h2 {
+//     font-family: Poppins, Arial, Helvetica, sans-serif;
+//     font-weight: 600;
+//     font-style: SemiBold;
+//     font-size: 48px;
+//     line-height: 100%;
+//   }
+// }
+//   &__p {
+//   width: 1px;
+//   height: 1px;
+//   padding: 0;
+//   margin: -1px;
+//   overflow: hidden;
+//   clip: rect(0, 0, 0, 0);
+//   white-space: nowrap;
+//   border: 0;
+//   }
+
+//   &__label {
+//     width: 277.96px;
+//     height: 48;
+//     opacity: 1;
+//     border-radius: 40px;
+//     font-family: Poppins, Arial, Helvetica, sans-serif;
+//     font-weight: 400;
+//     font-style: Regular;
+//     font-size: 14px;
+//     line-height: 20px;
+//     letter-spacing: 0;
+
+//     // margin-bottom: 16px;
+
+//     grid-column: 1/-1;
+// }
+
+//   @media (min-width: 744px) {
+//   &__label {
+//     width: 288px;
+//   }
+// }
+
+//   @media (min-width: 1260px) {
+//   &__label {
+//     width: 411px;
+//   }
+// }
+
+// &__text {
+//   font-family: Poppins, Arial, Helvetica, sans-serif;
+//   font-weight: 400;
+//   font-style: Regular;
+//   font-size: 14px;
+//   line-height: 20px;
+//   letter-spacing: 0;
+//   width: 277.96px;
+//   height: 148px;
+//   border-radius: 16px;
+//   margin-bottom: 32px;
+// }
+
+//   @media (min-width: 744px) {
+//   &__text {
+//     width: 288px;
+//   }
+// }
+
+//   @media (min-width: 1260px) {
+//   &__text {
+//     width: 411px;
+//   }
+// }
+
+// &__button {
+//   font-family: Poppins, Arial, Helvetica, sans-serif;
+//   font-weight: 700;
+//   font-style: Bold;
+//   font-size: 16px;
+//   line-height: 27px;
+//   letter-spacing: 0;
+//   text-align: center;
+//   width: 280px;
+//   height: 56px;
+//   opacity: 1px;
+//   border-radius: 40px;
+// }
+
+//   @media (min-width: 744px) {
+//   &__button {
+//     width: 288px;
+//   }
+// }
+
+//   @media (min-width: 1260px) {
+//   &__button {
+//     width: 411px;
+//   }
+// }
+
+//   &__font--main {
+//   font-family: Poppins, Arial, Helvetica, sans-serif;
+//   font-weight: 400;
+//   font-style: Regular;
+//   font-size: 14px;
+//   line-height: 140%;
+//   letter-spacing: 0;
+
+//   grid-column: 1/-1;
+
+//   margin-bottom: 8px;
+// }
+
+// &__font--p {
+//   font-family: Poppins, Arial, Helvetica, sans-serif;
+//   font-weight: 500;
+//   font-style: Medium;
+//   font-size: 16px;
+//   line-height: 140%;
+//   letter-spacing: 0;
+
+//   grid-column: 1/-1;
+// }
+
+//   &__grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, minmax(0, 1fr));
+//     gap: 20px;
+//     margin-inline: 20px;
+
+//     // Nagłówek
+//     h2 {
+//       grid-column: 1 / -1;
+//     }
+
+//     // Formularz
+//     form {
+//       display: grid;
+//       grid-template-columns: minmax(0, 1fr);
+//       gap: 12px;
+//       grid-column: 1 / -1;
+//       min-width: 0;
+
+//       input,
+//       textarea {
+//         width: 100%;
+//         min-width: 0;
+//         box-sizing: border-box;
+//       }
+
+//       button {
+//         width: 100%;
+//       }
+//     }
+
+//     // Dane kontaktowe
+//     .dane {
+//       grid-column: 1 / 3;
+//       min-width: 0;
+//     }
+
+//     // TABLET — 744 px
+//     @media (min-width: 744px) {
+//       grid-template-columns: repeat(6, minmax(0, 1fr));
+//       gap: 24px;
+//       margin-inline: 72px;
+
+//       form {
+//         grid-column: 1 / 4;
+//       }
+
+//       .dane {
+//         grid-column: 4 / 7;
+//       }
+//     }
+
+//     // DESKTOP — 1260 px
+//     @media (min-width: 1260px) {
+//       grid-template-columns: repeat(12, minmax(0, 1fr));
+//       margin-inline: 120px;
+
+//       form {
+//         grid-column: 1 / 6;
+//       }
+
+//       .dane {
+//         grid-column: 8 / 11;
+//       }
+//     }
+//   }
+// }
+
+
 .section4 {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-inline: 20px;
+
+    form {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+      grid-column: 1 / -1;
+      min-width: 0;
+    }
+
+    .dane {
+      grid-column: 1 / 2;
+      min-width: 0;
+    }
+  }
+
+  &__font--h2 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin-bottom: 48px;
+    grid-column: 1 / -1;
+  }
+
+  &__p {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   &__label,
   &__text {
     box-sizing: border-box;
+    width: 100%;
+    max-width: 277.96px;
     padding: 14px 16px;
     border: 1px solid #ccc;
   }
 
-  &__font--h2 {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.5px;
-  text-align: center;
-}
-
-  @media (min-width: 744px) {
-  &__font--h2 {
-  font-size: 48px;
-  }
-}
-
-  @media (min-width: 1260px) {
-  &__font--h2 {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 48px;
-    line-height: 100%;
-  }
-}
-  &__p {
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-  }
-
   &__label {
-    width: 277.96px;
-    height: 48;
-    opacity: 1;
+    height: 48px;
     border-radius: 40px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0;
-    margin-bottom: 16px;
-
-}
-
-  @media (min-width: 744px) {
-  &__label {
-    width: 288px;
   }
-}
 
-  @media (min-width: 1260px) {
-  &__label {
-    width: 411px;
-  }
-}
-
-&__text {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0;
-  width: 277.96px;
-  height: 148px;
-  border-radius: 16px;
-  margin-bottom: 32px;
-}
-
-  @media (min-width: 744px) {
   &__text {
-    width: 288px;
+    height: 148px;
+    border-radius: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 32px;
   }
-}
 
-  @media (min-width: 1260px) {
-  &__text {
-    width: 411px;
-  }
-}
-
-&__button {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0;
-  text-align: center;
-  width: 280px;
-  height: 56px;
-  opacity: 1px;
-  border-radius: 40px;
-}
-
-  @media (min-width: 744px) {
   &__button {
-    width: 288px;
+    width: 280px;
+    max-width: 100%;
+    height: 56px;
+    border-radius: 40px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    justify-self: start;
   }
-}
 
-  @media (min-width: 1260px) {
-  &__button {
-    width: 411px;
-  }
-}
-}
-
-.section5 {
   &__font--main {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0;
-}
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
 
-&__font--p {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0;
-}
+  &__font--p {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  // TABLET — 744px
+  @media (min-width: 744px) {
+    &__grid {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 24px;
+      margin-inline: 72px;
+
+      form {
+        grid-column: 1 / 4;
+      }
+
+      .dane {
+        grid-column: 4 / 7;
+      }
+    }
+
+    &__font--h2 {
+      font-size: 48px;
+    }
+
+    &__label,
+    &__text {
+      max-width: 288px;
+    }
+
+    &__button {
+      width: 288px;
+    }
+  }
+
+  // DESKTOP — 1260px
+  @media (min-width: 1260px) {
+    &__grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      margin-inline: 120px;
+
+      form {
+        grid-column: 1 / 6;
+      }
+
+      .dane {
+        grid-column: 8 / 11;
+      }
+    }
+
+    &__font--h2 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 100%;
+    }
+
+    &__label,
+    &__text {
+      max-width: 411px;
+    }
+
+    &__button {
+      width: 411px;
+    }
+  }
 }

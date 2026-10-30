@@ -224,7 +224,7 @@
         </div>
       </section>
 
-      <section4>
+      <!-- <section4 class="section4__grid">
         <h2 class="section4__font--h2" id="contacts">Contact us</h2>
         <form action="/wyslij.php" method="POST">
           <label for="imie" ><p class="section4__p">Name</p></label>
@@ -248,21 +248,57 @@
 
           <button type="submit" class="section4__button">Send</button>
         </form>
-      </section4>
 
-      <section5 class="section5">
-        <p class="section5__font--main">Phone</p>
-        <p class="section5__font--p">+1 234 5555-55-55</p>
-        <p class="section5__font--main">Email</p>
-        <p class="section5__font--p">hello@miami.com</p>
-        <p class="section5__font--main">Address</p>
-        <p class="section5__font--p">400 first ave.
-          <br>
-          suite 700 Minneapolis,
-          <br>
-          MN 55401
-        </p>
-      </section5>
+        <div class="dane">
+          <p class="section4__font--main">Phone</p>
+          <p class="section4__font--p">+1 234 5555-55-55</p>
+          <p class="section4__font--main">Email</p>
+          <p class="section4__font--p">hello@miami.com</p>
+          <p class="section4__font--main">Address</p>
+          <p class="section4__font--p">400 first ave.
+            <br>
+            suite 700 Minneapolis,
+            <br>
+            MN 55401
+          </p>
+        </div>
+      </section4> -->
+
+      <section class="section4__grid">
+        <h2 class="section4__font--h2" id="contacts">Contact us</h2>
+
+        <form action="/wyslij.php" method="POST">
+          <label for="imie" class="section4__p">Name</label>
+          <input type="text" placeholder="Name"
+          class="section4__label"
+          id="imie" name="name">
+
+          <label for="email" class="section4__p">Email</label>
+          <input type="email" placeholder="Email"
+          class="section4__label"
+          id="email" name="email">
+
+          <label for="message" class="section4__p">Message</label>
+          <textarea placeholder="Message" class="section4__text"
+          id="message" name="message"></textarea>
+
+          <button type="submit" class="section4__button">Send</button>
+        </form>
+
+        <div class="dane">
+          <p class="section4__font--main">Phone</p>
+          <p class="section4__font--p">+1 234 5555-55-55</p>
+
+          <p class="section4__font--main">Email</p>
+          <p class="section4__font--p">hello@miami.com</p>
+
+          <p class="section4__font--main">Address</p>
+          <p class="section4__font--p">
+            400 first ave.<br>
+            suite 700 Minneapolis, MN 55401
+          </p>
+        </div>
+      </section>
 
     </main>
     <footer class="footer">
